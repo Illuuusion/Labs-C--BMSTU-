@@ -1,5 +1,4 @@
-
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <stdio.h>
 #include <conio.h>
 #include <malloc.h>
