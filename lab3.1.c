@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
@@ -30,7 +30,7 @@ int main(){
 }
 
 int input(float* accuracy){
-	printf("Введите точность суммы сходящегося бесконечного ряда:\n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГІГ®Г·Г­Г®Г±ГІГј Г±ГіГ¬Г¬Г» Г±ГµГ®Г¤ГїГ№ГҐГЈГ®Г±Гї ГЎГҐГ±ГЄГ®Г­ГҐГ·Г­Г®ГЈГ® Г°ГїГ¤Г :\n");
 	if (scanf("%f", accuracy) == 1){
 		return SUCCESS_READ;
 	}
