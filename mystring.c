@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "mystring.h"
 unsigned strLength(const char* str){
 	unsigned i;
