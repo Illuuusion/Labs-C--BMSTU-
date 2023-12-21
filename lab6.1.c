@@ -6,7 +6,7 @@
 
 #define SUCCESS 0
 #define ERROR 1
-#define NULL 0 
+
 
 int inputSizeOfMatrix();
 float** AllocationOfMatrixMemory(int n);
