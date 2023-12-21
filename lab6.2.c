@@ -80,7 +80,7 @@ void inputElementsOfMatrix(float** mat, int n, int m){
 
 float* searchMaxElem(float** mat, int n, int m){
 	float* MaxElem = mat[0];
-	for (int i = 0; i < n - 1; i++){
+	for (int i = 0; i < n; i++){
 		for (int j = 0; j < m - 1 - i; j++){
 			if (*MaxElem < mat[i][j])
 				MaxElem = mat[i]+ j;
