@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include "mysort.h"
 
 void swapElement(int* adress1, int* adress2){
