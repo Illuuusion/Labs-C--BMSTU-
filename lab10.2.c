@@ -94,19 +94,18 @@ void averageMarkOfStudent(student_t* group, unsigned count){
 
 unsigned deleteStudentsByMarks(student_t* group, unsigned count){
 	unsigned countOfTwo = 0;
-	unsigned shift = 0;
-	unsigned count1 = count;
 	for (unsigned i = 0; i < count; i++){
 		for (unsigned j = 0; j < MAX_SIZE; j++){
 			if (group[i].marks[j] == 2){
 				countOfTwo += 1;
 				if (countOfTwo == 2){
-					for (unsigned k = i; k < count; k++){
+					for (unsigned k = i; k < count - 1; k++){
 							group[k] = group[k + 1];
 					}
-					shift++;
-					count -= shift;
-					continue;
+					count--;
+					i--;
+					countOfTwo = 0;
+					break;
 				}
 			}
 		}
@@ -116,13 +115,11 @@ unsigned deleteStudentsByMarks(student_t* group, unsigned count){
 
 void outputGroup(student_t* group, unsigned count){
 	for (unsigned i = 0; i < count; i++){
-		printf("%s\n", group[i].surname);
+		printf("\n%s\n", group[i].surname);
 		for (unsigned j = 0; j < MAX_SIZE; j++){
 			printf("%u ", group[i].marks[j]);
 		}
 		printf("\n");
-		printf("%.2f", group[i].average);
-		printf("\n\n");
+		printf("%.2f\n", group[i].average);
 	}
 }
-
