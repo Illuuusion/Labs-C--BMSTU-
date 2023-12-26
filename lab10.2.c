@@ -96,7 +96,7 @@ unsigned deleteStudentsByMarks(student_t* group, unsigned count){
 	for (unsigned i = 0; i < count; i++){
 		for (unsigned j = 0; j < MAX_SIZE; j++){
 			if (group[i].marks[j] == 2){
-				countOfTwo += 1;
+				countOfTwo ++;
 				if (countOfTwo == 2){
 					for (unsigned k = i; k < count - 1; k++){
 							group[k] = group[k + 1];
