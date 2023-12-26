@@ -59,7 +59,6 @@ void inputSurnameAndMarks(student_t* group, unsigned count){
 		gets(group[i].surname);
 		printf("Enter marks of student:\n");
 		for (unsigned j = 0; j < MAX_SIZE; j++){
-			char d;
 			while (scanf("%u%c", (group+i) -> marks+j, &d) != CORRECT_INPUT || d != '\n'){
 				printf("Mark must be integer type and positive");
 				fflush(stdin);
